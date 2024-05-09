@@ -53,7 +53,7 @@ const CountryDisplayScreen = () => {
         <FilterList />
       </div>
 
-      <div className="">
+      <div>
         <CountryCard country={locationData} />
       </div>
     </div>
