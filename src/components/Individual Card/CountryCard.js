@@ -32,9 +32,7 @@ const CountryCard = () => {
   console.log(countryInfo[0]);
 
   return (
-    <div
-      className={`md:h-[100vh] ${theme === "dark" ? "bg-dark" : "bg-light"}`}
-    >
+    <div className={`h-screen ${theme === "dark" ? "bg-dark" : "bg-light"}`}>
       <Navi />
       <div>
         <button
@@ -49,7 +47,7 @@ const CountryCard = () => {
           Back
         </button>
 
-        <div className="flex justify-center md:flex-row flex-col gap-10 mt-10 items-center">
+        <div className="flex justify-center lg:flex-row md:flex-col flex-col gap-10 md:mt-10 mt:2 items-center">
           <img
             className="md:w-[550px] md:h-[300px] w-[300px] h-[200px] object-cover mt-5 shadow-2xl"
             src={countryInfo[0]?.flags?.svg}
